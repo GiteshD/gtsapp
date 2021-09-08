@@ -1,4 +1,8 @@
 import React, {useEffect, useState} from "react";
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import Typography from '@material-ui/core/Typography';
+import '@fontsource/roboto';
 
 
 function InvestmentComponent(props) {
@@ -22,15 +26,19 @@ function InvestmentComponent(props) {
         props.inv();
     }
 
+
+
    
     return(
         <div style={{marginTop:'5em'}}>
             <h3>Investments </h3>
 
-            <span>{userState.name}</span>
-            <span style={{marginLeft:'1em'}}>{userState.amountRequired}</span>
-            <input style={{marginLeft:'1em'}} value={investedAmount} placeholder="invest" onChange={e => setInvestedAmount(e.target.value)}/>
-            <button className='counter-button counter-button-increment' onClick={handleInvestment}>Invest</button>
+    
+            <Typography variant="body1" >{userState.name}</Typography>
+            <Typography variant="body1" >{userState.amountRequired}</Typography>
+            <TextField id="outlined-basic" label="Amount" variant="outlined"  value={investedAmount}  onChange={e => setInvestedAmount(e.target.value)}/>
+        
+            <Button variant="contained" color="primary" onClick={handleInvestment}>Invest</Button>
         </div>
     );
     
