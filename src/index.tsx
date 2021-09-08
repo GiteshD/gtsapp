@@ -5,6 +5,7 @@ import App from './App';
 import CounterComponent  from './components/CounterComponent';
 import DiceComponent from './components/DiceComponent';
 import InvestmentComponent from './components/InvestmentComponent';
+import InvestmentCountComponent from './components/InvestmentCountComponent';
 
 
 const MyCustomComponent = function() {
@@ -34,7 +35,9 @@ ReactDOM.render(
     <DiceComponent />
   {/* <CustomCompA/> */}
   <br/>
-  <InvestmentComponent/>
+  {/* <InvestmentComponent/> */}
+  <InvestmentCountComponent />
+
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from "react";
 
 
-function InvestmentComponent() {
+function InvestmentComponent(props) {
+
+    console.log(props);
 
     const [userState, setUserState] = useState(()=> ({
         name: 'Bruce Kent',
@@ -16,6 +18,8 @@ function InvestmentComponent() {
         setUserState(prviousUserState => {
             return {...prviousUserState, amountRequired: prviousUserState.amountRequired - Number(investedAmount)}
         });
+
+        props.inv();
     }
 
    
