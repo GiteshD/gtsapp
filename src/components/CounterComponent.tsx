@@ -1,7 +1,4 @@
-import { count } from 'console';
-
-import { extname } from 'path';
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import '../css/Counter.css'
 
 
