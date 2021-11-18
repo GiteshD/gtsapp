@@ -1,6 +1,8 @@
 
 import React, { Component } from "react";
 import React, {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 
 
 type DiceState = {
@@ -16,6 +18,16 @@ type DiceState = {
 //     count: number,
 //     correctAnswer: boolean | undefined
 // }
+
+
+
+// type DiceState = {
+//     seed: number,
+//     answer: number,
+//     count: number,
+//     correctAnswer: boolean | undefined
+// }
+
 
 
 
