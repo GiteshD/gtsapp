@@ -78,7 +78,7 @@ class CounterComponent extends Component<{}, CounterState> {
                 <h3 style={{color:'red', display: this.state.alert? 'block': 'none'}}>cannnot decrement further</h3>
             </div>
         );
-    };
+    }
 }
 
 export default CounterComponent;
