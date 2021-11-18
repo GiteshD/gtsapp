@@ -9,6 +9,9 @@ type CounterState = {
 
 
 class CounterComponent extends Component<{}, CounterState> {
+    
+    var dummy;
+    var dummy2;
 
     constructor(props: any, state: any) {
         super(props, state)
