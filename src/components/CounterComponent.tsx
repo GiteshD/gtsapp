@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import '../css/Counter.css'
 import React, {useEffect, useState} from "react";
-
+import React, {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 
 // type CounterState = {
 //     count: number,
