@@ -3,10 +3,17 @@ import '../css/Counter.css'
 import React, {useEffect, useState} from "react";
 
 
+// type CounterState = {
+//     count: number,
+//     alert: boolean
+// }
+
+
 type CounterState = {
     count: number,
     alert: boolean
 }
+
 
 
 class CounterComponent extends Component<{}, CounterState> {
