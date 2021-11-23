@@ -46,6 +46,6 @@ jobs:
         run: echo ${{ steps.docker_build.outputs.digest }}
       
       - name: echo dockerhub_user
-        run: echo ${{ secrets.DOCKER_HUB_USERNAME }}
+        run: echo ${{ USERNAME }}
       - name: append username with random string
-        run: echo GTS=${{ secrets.DOCKER_HUB_USERNAME }}
+        run: echo GTS=$USERNAME
