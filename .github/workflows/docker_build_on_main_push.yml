@@ -44,3 +44,8 @@ jobs:
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/gtsapp:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
+      
+      - name: echo dockerhub_user
+        run: echo ${{ secrets.DOCKER_HUB_USERNAME }}
+      - name: append username with random string
+        run: echo GTS=${{ secrets.DOCKER_HUB_USERNAME }}
