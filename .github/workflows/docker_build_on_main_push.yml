@@ -45,7 +45,5 @@ jobs:
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       
-      - name: echo dockerhub_user
-        run: echo ${{ USERNAME }}
       - name: append username with random string
         run: echo GTS=$USERNAME
