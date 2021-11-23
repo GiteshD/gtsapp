@@ -45,5 +45,12 @@ jobs:
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       
-      - name: append username with random string
-        run: echo GTS=$USERNAME
+      - name: list directories
+        run: echo ls
+      
+      - name: create env file
+        run: |
+            touch .env
+             echo ENGINE_API_KEY =${{ secrets.DOCKER_HUB_USERNAME }} >> .env
+      - name: cat env file
+        run: cat .env
